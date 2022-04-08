@@ -4,7 +4,7 @@ from upload.models import Content
 
 def index(request):
 
-    return HttpResponseRedirect('/index')
+    return render(request,'index.html')
 
 
 

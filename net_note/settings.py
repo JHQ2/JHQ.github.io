@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-m_$qswxl48b_h6t9*nt_sn0hr+wm($ppv-zbuj)&l70*24%!_7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.31.209']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'user',
-    'index',
     'note',
     'net_note',
     'upload'
@@ -60,7 +59,7 @@ ROOT_URLCONF = 'net_note.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR,'templates'),BASE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
